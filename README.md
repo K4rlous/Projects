@@ -3,7 +3,19 @@ A repository containing projects in various languages and frameworks, from nativ
 
 ---
 
-### 🛠️ SpringbootAPI (Spring Boot + SQLite) – 2025
+## JavaScript / Node.js
+
+### 🛒 CRUD de Produtos — Bureau Veritas (Node.js + MySQL) 
+A full CRUD product management system built with Node.js, Express and MySQL, with an HTML/JavaScript web client.
+- **Technologies:** Node.js, Express, MySQL, HTML, CSS, JavaScript
+- **Features:** Full CRUD operations, dynamic ASC/DESC column sorting, web client consuming the API in real time, and SQL script for table creation.
+- **Repository:** [https://github.com/K4rlous/Projects/tree/main/CRUD-BureauVeritas](https://github.com/K4rlous/Projects/tree/main/CRUD-BureauVeritas)
+
+---
+
+## Java
+
+### 🛠️ SpringbootAPI (Spring Boot + SQLite) 
 A RESTful product management API with a simple HTML/JavaScript web client.
 - **Technologies:** Java, Spring Boot, Hibernate, SQLite, JDBC, Maven
 - **Features:** Full CRUD, batch save, input validation, and a web client consuming the API in real time.
@@ -11,7 +23,7 @@ A RESTful product management API with a simple HTML/JavaScript web client.
 
 ---
 
-### 🌤️ Weather System – 2025
+### 🌤️ Weather System 
 A real-time weather information system using the WeatherAPI.
 - **Technologies:** Java, HTTP Client, JSON parsing
 - **Features:** Real-time weather data retrieval, search by city and country, displays temperature and "feels like" temperature, shows humidity, wind speed and atmospheric pressure, automatic location validation, and multi-language support.
@@ -19,7 +31,7 @@ A real-time weather information system using the WeatherAPI.
 
 ---
 
-### 📦 JDBC Stock System (JavaFX + SQLite) – 2025
+### 📦 JDBC Stock System (JavaFX + SQLite) 
 A product inventory management system with complete CRUD operations.
 - **Technologies:** Java, JavaFX, JDBC, SQLite
 - **Features:** Complete CRUD operations, interactive TableView with automatic refresh, DAO pattern implementation, status management, price input with comma/period support, custom CSS styling, and automatic database connection management.
@@ -27,7 +39,7 @@ A product inventory management system with complete CRUD operations.
 
 ---
 
-### 🐬 JDBC MySQL Test – 2025
+### 🐬 JDBC MySQL Test 
 A product management system demonstrating MySQL integration with JDBC.
 - **Technologies:** Java, JDBC, MySQL
 - **Features:** Complete CRUD operations with MySQL server, DAO pattern implementation, PreparedStatement for SQL injection prevention, error handling and connection management, and command-line interface for testing.
@@ -35,7 +47,7 @@ A product management system demonstrating MySQL integration with JDBC.
 
 ---
 
-### 🛒 Shopping List (JavaFX) – 2025
+### 🛒 Shopping List (JavaFX) 
 A shopping list manager with automatic data persistence.
 - **Technologies:** Java, JavaFX, File I/O
 - **Features:** Add and remove items, export list to text file, automatic save and load functionality, data persistence between sessions, input validation with alerts, confirmation dialogs, and intuitive interface.
@@ -43,7 +55,7 @@ A shopping list manager with automatic data persistence.
 
 ---
 
-### 🌐 Mini Web Browser (JavaFX) – 2025
+### 🌐 Mini Web Browser (JavaFX) 
 A lightweight web browser with essential navigation features.
 - **Technologies:** Java, JavaFX, WebView
 - **Features:** URL navigation with automatic HTTP/HTTPS handling, back/forward navigation buttons, page reload functionality, real-time URL field updates, and Google homepage on startup.
@@ -59,7 +71,7 @@ A random advice generator using the Advice Slip API.
 
 ---
 
-### 🔒 Safe Password Generator (JavaFX) – 2025
+### 🔒 Safe Password Generator (JavaFX) 
 A secure password generator using cryptographically strong random number generation.
 - **Technologies:** Java, JavaFX, SecureRandom
 - **Features:** Cryptographically secure password generation, customizable password length (default: 16 characters), includes uppercase, lowercase, numbers and special characters, both GUI and CLI versions available, and input validation.
@@ -67,7 +79,7 @@ A secure password generator using cryptographically strong random number generat
 
 ---
 
-### 📝 Mini Text Editor (JavaFX) – 2025
+### 📝 Mini Text Editor (JavaFX) 
 A simple text editor for opening, editing, and saving `.txt` files.
 - **Technologies:** Java, JavaFX
 - **Features:** Open and read `.txt` files, edit text content in a large text area, save files with automatic `.txt` extension, simple toolbar with Open and Save buttons, and clean minimalist interface.
@@ -75,7 +87,7 @@ A simple text editor for opening, editing, and saving `.txt` files.
 
 ---
 
-### 🍔 BMI Calculator (JavaFX) – 2025
+### 🍔 BMI Calculator (JavaFX) 
 A desktop application to calculate the Body Mass Index (BMI).
 - **Technologies:** Java, JavaFX
 - **Features:** Input fields for weight and height, automatic BMI calculation, classification according to WHO standards, error handling for invalid inputs, and a clickable link to the official WHO BMI table.
@@ -83,7 +95,7 @@ A desktop application to calculate the Body Mass Index (BMI).
 
 ---
 
-### ⌚ Digital Watch (JavaFX) – 2025
+### ⌚ Digital Watch (JavaFX) 
 A simple digital clock application with real-time display.
 - **Technologies:** Java, JavaFX
 - **Features:** Real-time clock display in 24-hour format (HH:mm:ss), automatic updates every second using JavaFX Timeline animation, minimalist black and yellow interface, and lightweight desktop application.
@@ -91,7 +103,7 @@ A simple digital clock application with real-time display.
 
 ---
 
-### 🎮 Hangman Game – 2025
+### 🎮 Hangman Game 
 A classic word-guessing game in the command line.
 - **Technologies:** Java
 - **Features:** Random word selection from 17 predefined words, 6 attempts to guess the word, input validation (single letters only), prevents duplicate guesses, and interactive command-line interface.
