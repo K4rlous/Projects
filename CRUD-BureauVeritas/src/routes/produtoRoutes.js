@@ -7,5 +7,6 @@ router.get('/:id', controller.buscarPorId);
 router.post('/', controller.cadastrar);
 router.put('/:id', controller.atualizar);
 router.delete('/:id', controller.deletar);
+router.post('/batch', controller.cadastrarLista);
 
 module.exports = router;

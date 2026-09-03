@@ -15,6 +15,7 @@ Sistema simples de cadastro de produtos com operações completas de CRUD, desen
 ## 📋 Funcionalidades
 
 - Cadastrar produto
+- Cadastrar múltiplos produtos em lote (batch)
 - Listar todos os produtos
 - Editar produto por ID
 - Deletar produto por ID
@@ -40,6 +41,29 @@ CREATE TABLE produtos (
 
 ---
 
+## 🔗 Endpoints
+
+| Método | Rota | Descrição |
+|--------|------|-----------|
+| GET | /produtos | Lista todos os produtos |
+| GET | /produtos/:id | Busca produto por ID |
+| POST | /produtos | Cadastra um produto |
+| POST | /produtos/batch | Cadastra múltiplos produtos |
+| PUT | /produtos/:id | Atualiza produto por ID |
+| DELETE | /produtos/:id | Deleta produto por ID |
+
+### Exemplo — POST /produtos/batch
+
+```json
+[
+    {"descricao": "Teclado Mecânico", "quantidade": 3, "valor": 250.00, "usuario": "Fulano"},
+    {"descricao": "Mouse Gamer", "quantidade": 5, "valor": 180.00, "usuario": "Sicrano"},
+    {"descricao": "Monitor 24pol", "quantidade": 2, "valor": 1200.00, "usuario": "Beltrano"}
+]
+```
+
+---
+
 ## ▶️ Como Rodar
 
 ### Pré-requisitos
@@ -55,7 +79,7 @@ git clone https://github.com/K4rlous/Projects
 
 2. Acesse a pasta do projeto:
 ```bash
-cd crud-produtos
+cd CRUD-BureauVeritas
 ```
 
 3. Instale as dependências:
@@ -101,4 +125,6 @@ A lógica aplicada neste projeto é equivalente — a IA me ajudou a transpor o 
 | Body da requisição | `@RequestBody`     | `req.body`      |
 | Resposta           | `ResponseEntity`   | `res.json()`    |
 | Conexão DB         | Hibernate/JDBC     | mysql2          |
+| Batch save         | `saveAll()`        | `INSERT ... VALUES ?` |
+
 

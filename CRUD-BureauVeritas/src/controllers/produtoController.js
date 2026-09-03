@@ -45,3 +45,19 @@ exports.deletar = (req, res) => {
         res.json({ mensagem: 'Produto deletado!' });
     });
 };
+
+exports.cadastrarLista = (req, res) => {
+    const produtos = req.body;
+    if (!Array.isArray(produtos) || produtos.length === 0) {
+        return res.status(400).json({ erro: 'Envie um array de produtos.' });
+    }
+    const valores = produtos.map(p => [p.descricao, p.quantidade, p.valor, p.usuario]);
+    db.query(
+        'INSERT INTO produtos (descricao, quantidade, valor, usuario) VALUES ?',
+        [valores],
+        (err, results) => {
+            if (err) return res.status(500).json({ erro: err.message });
+            res.status(201).json({ mensagem: `${results.affectedRows} produtos cadastrados!` });
+        }
+    );
+};
